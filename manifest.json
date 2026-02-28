@@ -1,0 +1,14 @@
+{
+  "name": "gpt-tts",
+  "description": "Text-to-speech using OpenAI's TTS API.",
+  "config": {
+    "api_key": {
+      "description": "OpenAI API key.",
+      "required": true
+    },
+    "voice": {
+      "description": "TTS voice to use (e.g. alloy, ash, ballad, coral, echo, fable, nova, onyx, sage, shimmer).",
+      "required": true
+    }
+  }
+}
