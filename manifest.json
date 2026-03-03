@@ -8,7 +8,8 @@
     },
     "voice": {
       "description": "TTS voice to use (e.g. alloy, ash, ballad, coral, echo, fable, nova, onyx, sage, shimmer).",
-      "required": true
+      "required": true,
+      "default": "cedar"
     },
     "stt_model": {
       "description": "Model for speech-to-text (e.g. gpt-4o-transcribe, gpt-4o-mini-transcribe, whisper-1).",
