@@ -14,7 +14,7 @@ KNOWN_PARAMS = {"text", "instructions"}
 
 
 def main() -> None:
-    """Call the OpenAI TTS API and write the resulting MP3 to /tmp/gpt-tts/."""
+    """Call the OpenAI TTS API and write the resulting MP3 to /tmp/gpt-audio/."""
     params = json.load(sys.stdin)
     unknown = set(params) - KNOWN_PARAMS
     if unknown:
@@ -58,7 +58,7 @@ def main() -> None:
         )
         sys.exit(1)
 
-    output_dir = Path("/tmp/gpt-tts")
+    output_dir = Path("/tmp/gpt-audio")
     output_dir.mkdir(parents=True, exist_ok=True)
     (output_dir / "output.mp3").write_bytes(response.content)
 

@@ -1,0 +1,11 @@
+{
+  "name": "speech_to_text",
+  "description": "Transcribe an audio file to text. Returns the transcribed text.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "audio": {
+      "type": "file",
+      "description": "The audio file to transcribe."
+    }
+  }
+}
